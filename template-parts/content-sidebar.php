@@ -28,26 +28,5 @@ if ($children) { ?>
 
 <?php } ?>
 
-<?php $posts = get_field('related'); if( $posts ): ?>
-<?php foreach( $posts as $post):?>
-  <?php setup_postdata($post); ?>
-
-  <a class="p-5 d-block sidebar-block mb-3 bg-white text-center hvr-underline-from-left" href="<?php the_permalink(); ?>">
-   <div>
-    <i class="round-icon fal fa-2x mb-2 rounded-circle fa-fw <?php the_field('icon'); ?>"></i>
-  </div>
-  <h5 class="d-block"><?php the_title(); ?></h5>
-  <?php if ( get_field( 'ingress_puff' ) ): ?>
-    <p><?php the_field('ingress_puff'); ?></p><?php else: ?>
-    <p><?php echo wp_trim_words( get_field('ingress'), 12, '...' );?></p>
-  <?php endif;?>
-</a>
-
-<?php endforeach; ?>
-<?php wp_reset_postdata(); ?>
-<?php endif; ?>
-
- 
-          
 </aside>
 

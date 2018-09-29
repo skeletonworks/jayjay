@@ -12,7 +12,7 @@ class Slinky {
       resize: true,
       speed: 300,
       theme: 'slinky-theme-default',
-      title: false
+      title: true
     }
   }
 

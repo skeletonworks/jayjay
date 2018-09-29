@@ -1,4 +1,4 @@
-    <div class="pb-5">
+    <div class="">
         <?php the_breadcrumbs(); ?>
     </div>
 
