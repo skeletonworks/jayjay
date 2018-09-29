@@ -16,11 +16,8 @@
 
 .header-jumbotron{
 	height: 495px;
-	border-radius: 0;
 }
 
 .has_thumbnail{
-	margin-top: -120px;
-	background: #fff;
-	padding-top: 3em;
+	margin-top: -50px;
 }

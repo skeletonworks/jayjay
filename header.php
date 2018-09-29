@@ -11,10 +11,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
 
     <?php wp_head(); ?>
 </head>
@@ -32,8 +30,8 @@ $(document).ready(function () {
 </script>
 <div class="wrapper">
     <nav id="sidebar" >
- <div id="dismiss" class="p-4">
-            <i class="fas fa-2x fa-arrow-left"></i>
+        <div id="dismiss" class="p-4">
+            <i class="fal fa-2x fa-arrow-left"></i>
         </div>
         <?php
                 wp_nav_menu(array(
@@ -45,6 +43,6 @@ $(document).ready(function () {
 
                 ));
               ?> 
+     
     </nav>
     <div id="content">
-

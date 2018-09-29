@@ -1,0 +1,18 @@
+
+			#breadcrumbs{
+				list-style:none;
+				overflow:hidden;
+				margin: 0;
+				padding: 0;
+				& li{
+					display:inline-block;
+					vertical-align:middle;
+					margin-right:10px;
+					font-size: .8em;
+				}
+
+				& .separator{
+					font-size:6px;
+					color:#ddd;
+				}
+			}

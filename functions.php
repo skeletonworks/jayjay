@@ -1,4 +1,5 @@
 <?php
+require get_template_directory() . '/inc/functions/breadcrumbs.php';
 
 add_theme_support( 'post-thumbnails' );
 
@@ -24,11 +25,12 @@ function skeleton_wp_setup() {
 add_action( 'after_setup_theme', 'skeleton_wp_setup' );
 
 function register_my_menu() {
-  register_nav_menu('primary',__( 'Primary' ));
+    register_nav_menu('primary',__( 'Primary' ));
     register_nav_menu('footer',__( 'Footer' ));
 
 }
 add_action( 'init', 'register_my_menu' );
+
 
 
 /**
@@ -103,4 +105,6 @@ class CSS_Menu_Maker_Walker extends Walker {
     $output .= "</li>\n";
   }
 }
+
+
 ?>

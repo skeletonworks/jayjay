@@ -10,7 +10,9 @@ Version: 1.0
 
 @import "../inc/bootstrap/scss/bootstrap";
 @import "base";
-@import "sidenav";
+// @import "sidenav";
 @import "navigation";
 @import "type";
+@import "breadcrumbs";
 @import "../inc/slinky/slinky";
+@import "https://pro.fontawesome.com/releases/v5.3.1/css/all.css";
