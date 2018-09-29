@@ -8,5 +8,9 @@ Version: 1.0
  Text Domain: jayjay
 */
 
-@import "../bootstrap/scss/bootstrap";
-@import "parts/navigation";
+@import "../inc/bootstrap/scss/bootstrap";
+@import "base";
+@import "sidenav";
+@import "navigation";
+@import "type";
+@import "../inc/slinky/slinky";
