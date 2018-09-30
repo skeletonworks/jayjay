@@ -12,11 +12,16 @@
     padding: 0px;
     min-height: 100vh;
     transition: all 0.3s;
+        img{
+        max-width: 100%;
+        }
 }
+
 
 .header-jumbotron{
 	height: 495px;
 	border-radius: 0;
+    padding: 0;
 }
 
 .has_thumbnail{
@@ -24,3 +29,10 @@
 	background: #fff;
 	padding-top: 3em;
 }
+
+.site-logo{
+    img{
+    max-height: 50px;
+    padding: 10px 5;;
+    }
+    }

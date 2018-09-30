@@ -4,15 +4,15 @@
 		<div class="row">
 			<div class="col">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"><br>
-			&copy; Copyright <?php echo date(Y) ?>
+			&copy; Copyright <?php echo date('Y') ?>
 			</div>
 			<div class="col-md-9">		       
 	 		<?php wp_nav_menu(array(
                 'theme_location' => 'footer',
                 'menu_id'         => false,
                 'depth'           => 3,
-                'container_class' => false, 
-                'menu_class'      => 'list-unstyled',
+                'container_class' => 'list-unstyled', 
+                'menu_class'      => false,
                 'container_id' => false, 
                 ));
               ?> 
@@ -26,7 +26,7 @@
 	<div class="container">
 		<div class="row">
 				<div class="col text-center small">
-					<strong>&copy; Copyright <?php echo date(Y) ?>.</strong>
+					<strong>&copy; Copyright <?php echo date('Y') ?>.</strong>
 
 			</div>
 		</div>
