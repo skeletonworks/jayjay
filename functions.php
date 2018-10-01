@@ -33,6 +33,17 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
+function m1_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'the_logo' ); // Add setting for logo uploader
+         
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'the_logo', array(
+        'label'    => __( 'Logo', 'logo' ),
+        'section'  => 'title_tagline',
+        'settings' => 'the_logo',
+    ) ) );
+}
+add_action( 'customize_register', 'm1_customize_register' );
 
 /**
  * Load custom WordPress nav walker.
