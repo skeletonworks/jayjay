@@ -93,9 +93,16 @@
     padding-top: 1em;
         li{
         padding: .5em 1em;
+        font-family: san-serif;
+                &:before{
+                margin-left: 0px;
+                margin-right: 15px;
+                }
+
         a{
         }
         .nav_desc{
+        margin-top:5px;
         display: block;
         color: rgba(0,0,0,.5)
         }
