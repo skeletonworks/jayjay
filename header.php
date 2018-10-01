@@ -40,9 +40,18 @@ $(document).ready(function () {
                 'menu_class'      => 'list-unstyled',
                 'depth'           => 3,
                 'container_id' => 'menu', 
+                ));
+              ?> 
+             <?php
+                wp_nav_menu(array(
+                'theme_location' => 'secondary',
+                'container'       => 'div',
+                'menu_class'      => 'list-unstyled',
+                'depth'           => 3,
+                'container_id' => 'secondary-menu', 
+                'walker'          => new Nav_Description,
 
                 ));
               ?> 
-     
     </nav>
     <div id="content">

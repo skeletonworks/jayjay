@@ -11,8 +11,8 @@
                 'theme_location' => 'footer',
                 'menu_id'         => false,
                 'depth'           => 3,
-                'container_class' => 'list-unstyled', 
-                'menu_class'      => false,
+                'menu_class' 		=> 'list-unstyled', 
+                'container_class' => false,
                 'container_id' => false, 
                 ));
               ?> 
