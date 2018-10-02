@@ -9,7 +9,7 @@
 
            <?php }
            else { ?>
-            <div class="bg-light">
+            <div class="bg-white">
 
             <?php }
             ?>

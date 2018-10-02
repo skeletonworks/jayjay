@@ -23,9 +23,10 @@
             <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
         </div>
     <div id="main-container" class="container">
+         <?php  get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
+
         <div class="row justify-content-center  <?php if ( has_post_thumbnail() ) { ?> has_thumbnail <?php } ?>"> 
             <div class="col-md-7 pb-4">
-                <?php  get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
 
                 <!--<div class="silver-ratio mb-3" style="background: url('<?php echo $bg[0]; ?>'); background-size: cover;"></div> -->
 

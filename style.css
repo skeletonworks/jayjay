@@ -7026,6 +7026,9 @@ a.text-dark:hover, a.text-dark:focus {
 #secondary-menu li:before {
   margin-left: 0px;
   margin-right: 15px;
+  height: 40px;
+  display: block;
+  float: left;
 }
 #secondary-menu li .nav_desc {
   margin-top: 5px;
@@ -7081,6 +7084,33 @@ hr {
 }
 article p {
   line-height: 1.8;
+}
+#simpliform .step {
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+#simpliform .control-label {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#simpliform .form-control {
+  border-bottom: 2px solid;
+}
+#simpliform .pagination-wrapper {
+  padding: 15px;
+}
+#simpliform .next-btn-wrapper, #simpliform .prev-btn-wrapper {
+  width: 100% !important;
+  text-align: center !important;
+  margin-bottom: 10px;
+}
+#simpliform .next-btn-wrapper .next-btn, #simpliform .prev-btn-wrapper .next-btn {
+  display: block;
+  width: 100%;
+}
+#simpliform .prev-btn-wrapper {
+  order: 2;
 }
 #breadcrumbs {
   list-style: none;
