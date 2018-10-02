@@ -16,7 +16,7 @@ if($post->post_parent)
 else
   $children = wp_list_pages("sort_column=menu_order&depth=1&title_li=&child_of=".$post->ID."&echo=0");
 if ($children) { ?>
-  <aside class="col col-lg-5 col-md-4 p-md-5 bg-light">
+  <aside class="col col-md-4 p-md-5 bg-light">
 
 
   <div class="mb-4" id="submenu">

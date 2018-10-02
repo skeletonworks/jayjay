@@ -44,7 +44,7 @@
             <?php  get_template_part( 'template-parts/content', 'sidebar' ); ?>
         </div>
     </div>
-    <div class="container bg-primary">
+    <div class="container bg-dark">
         <div class="">
             <div class="p-5">
                 

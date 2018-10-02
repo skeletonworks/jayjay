@@ -147,7 +147,8 @@
 
 footer{
     .menu-item.menu-item-has-children{
-  
+              line-height: 1.2!IMPORTANT;
+
         font-weight: bold; 
         @media (min-width: 768px) {
             width:25%;
@@ -162,7 +163,7 @@ footer{
             & li{
             list-style: none;
             font-weight: 300;
-            line-height: 1.2;
+            line-height: 1.2!IMPORTANT;
             margin-bottom: 10px;
             }
         }

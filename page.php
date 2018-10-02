@@ -17,11 +17,11 @@
             <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
         </div>
     <div id="main-container" class="container">
+
+
+        <div class="row justify-content-center <?php if ( has_post_thumbnail() ) { ?>has_thumbnail <?php } ?>"> 
+            <div class="col-md-8 p-md-5">
          <?php  get_template_part( 'template-parts/content', 'breadcrumbs' ); ?>
-
-
-        <div class="row  <?php if ( has_post_thumbnail() ) { ?>has_thumbnail <?php } ?>"> 
-            <div class="col-lg-7 col-md-8 p-md-5">
 
                 <!--<div class="silver-ratio mb-3" style="background: url('<?php echo $bg[0]; ?>'); background-size: cover;"></div> -->
 
@@ -33,11 +33,9 @@
                 <button id="more" class="btn btn-primary">Läs mer</button>
 
             </div>
-
-            <?php  get_template_part( 'template-parts/content', 'sidebar' ); ?>
         </div>
     </div>
-    <div class="container bg-primary">
+    <div class="container bg-dark">
         <div class="">
             <div class="p-5">
                 

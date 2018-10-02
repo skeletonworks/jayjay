@@ -37,7 +37,8 @@
      }
 }
 
-#post-content { display: none; }
+#post-content { display: none;
+transition: all 2ms ease }
 .show-more { margin-top: 15px; }
 
 
