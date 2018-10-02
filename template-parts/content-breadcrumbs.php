@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col p-4">
+	<div class="col px-md-5">
 		<?php the_breadcrumbs(); ?>
 	</div>
 </div>

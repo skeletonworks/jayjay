@@ -12,7 +12,9 @@
     <![endif]-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 
     <?php wp_head(); ?>
 </head>
@@ -26,13 +28,42 @@ $(document).ready(function () {
         $('#sidebarCollapse').toggleClass('active');
     });
 });
-
+$(document).ready(function () {
+    $('#more').click(function() {
+        $('#post-excerpt').hide();
+        $('#post-content').show();
+        $(this).remove();
+    });
+});
 </script>
 <div class="wrapper">
     <nav id="sidebar" >
         <div id="dismiss" class="p-4">
             <i class="fal fa-2x fa-arrow-left"></i>
         </div>
+
+
+
+    
+                                   <form action="" method="get" class="bg-white mb-3">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-borderless" type="search" placeholder="Search" value="<?php the_search_query(); ?>" name="s">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+
+
+
         <?php
                 wp_nav_menu(array(
                 'theme_location' => 'primary',

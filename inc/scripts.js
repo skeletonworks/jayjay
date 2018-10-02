@@ -1,3 +1,5 @@
+<style>
+
 $(document).ready(function () {
     $('#sidebarCollapse, #dismiss').on('click', function () {
         $('#sidebar').toggleClass('active');
@@ -5,3 +7,11 @@ $(document).ready(function () {
     });
 });
 
+jQuery(document).ready(function($) {
+    $('more').click(function() {
+        $('#post-excerpt').hide();
+        $('#post-content').show();
+        $(this).remove();
+    });
+});
+</script>
