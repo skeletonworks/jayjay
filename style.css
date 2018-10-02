@@ -7016,6 +7016,14 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 10px;
   display: inline-block;
 }
+.form-control-borderless {
+  border: none;
+}
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 #secondary-menu {
   padding-top: 1em;
 }
@@ -7071,7 +7079,10 @@ footer .menu-item.menu-item-has-children .sub-menu li {
   margin-bottom: 10px;
 }
 footer img {
-  margin-bottom: 10px;
+  opacity: 0.1;
+  max-width: 60px !important;
+  margin: 0px auto 20px;
+  display: block;
 }
 a {
   color: #222;
@@ -7089,6 +7100,9 @@ article p {
   border: 1px solid #ddd;
   padding: 10px 0;
   margin-bottom: 10px;
+}
+#simpliform .step-header {
+  padding: 15px;
 }
 #simpliform .control-label {
   text-transform: uppercase;
