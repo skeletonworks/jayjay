@@ -7043,6 +7043,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 40px;
   display: block;
   float: left;
+  color: orange;
 }
 #secondary-menu li .nav_desc {
   margin-top: 5px;
@@ -7132,6 +7133,17 @@ article p {
 }
 #simpliform .prev-btn-wrapper {
   order: 2;
+}
+.form-container {
+  color: #fff;
+}
+.form-container .step {
+  border: none !important;
+}
+.form-container .form-control {
+  border-radius: 0 !important;
+  padding: 30px 15px !important;
+  border: 0 !important;
 }
 #breadcrumbs {
   list-style: none;
