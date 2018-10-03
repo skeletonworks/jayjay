@@ -1,19 +1,17 @@
 
 <?php get_header(); ?>
-    <div class="mb-5">
-        <div class="bg-light">
+ 
             <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
-        </div>
-    </div>
-        <div id="main-container" class="container">
-            <div class="row">
+
+        <div id="main-container" class="container bg-white">
+            <div class="row  justify-content-center">
                 <div class="col-sm-8 col-md-9">
                     <?php
                     $query1 = new WP_Query(  array( 'posts_per_page' => 1 )  );
                     if ( $query1->have_posts() ) {
                         while ( $query1->have_posts() ) {
                             $query1->the_post(); ?>
-                            <article id="post-<?php the_ID(); ?>" class="mb-4 pb-4 border-bottom" <?php post_class(); ?>>
+                            <article id="post-<?php the_ID(); ?>" class="my-5 pb-4 border-bottom" <?php post_class(); ?>>
                                 <a href="<?php the_permalink(); ?>" class="news-card">
 
                                     <?php if ( has_post_thumbnail() ) { ?>
