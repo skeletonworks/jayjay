@@ -1,5 +1,5 @@
 
-<footer class="bg-light py-5">
+<footer class="bg-light py-md-5 py-4">
 	<div class="container">
 	  <div class="row justify-content-md-center">
 			<div class="col-md-2 col-sm-6">
@@ -12,7 +12,7 @@
 </div>
 						<div class="row">
 
-				<div class="col p-md-5">		       
+				<div class="col p-4 p-md-5">		       
 					<?php wp_nav_menu(array(
 						'theme_location' => 'footer',
 						'menu_id'         => false,

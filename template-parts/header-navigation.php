@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="py-sm-3 py-md-5 d-flex justify-content-between">
+	<div class="mt-2 py-sm-3 py-md-5 d-flex justify-content-between">
 		<div class="col"> 
 			<button type="button" id="sidebarCollapse" class="navbar-btn">
 				<span></span>

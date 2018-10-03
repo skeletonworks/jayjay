@@ -36,7 +36,7 @@
                <!--  <simpli-form form-id="6SiEKo1pQpS60Lfd3C2c"></simpli-form> -->
                 <div id="post-excerpt"  ><?php the_excerpt(); ?></div>
                 <div id="post-content"><?php the_content(); ?></div>
-                <button id="more" class="btn btn-primary">Läs mer</button>
+                <button id="more" class="btn btn-link p-0"><i class="fal fa-plus"></i> Läs mer</button>
 
             </div>
 

@@ -46,7 +46,7 @@
                                     <?php while ( $query2->have_posts() ) {
                                         $query2->the_post(); ?>
 
-                                        <article id="post-<?php the_ID(); ?>" class="col-4 mb-3" <?php post_class(); ?>>
+                                        <article id="post-<?php the_ID(); ?>" class="col-6 col-md-4 mb-3" <?php post_class(); ?>>
                                             <a href="<?php the_permalink(); ?>" class="news-card">
 
                                                 <?php if ( has_post_thumbnail() ) { ?>
