@@ -83,5 +83,8 @@
 
                             ));
                             ?> 
+                            <div class="px-4">
+                            <a class="btn btn-primary btn-block" href="<?php echo get_theme_mod( 'the_link', 'http://www.google.com' ); ?>">Go to</a>
+                        </div>
                         </nav>
                         <div id="content">

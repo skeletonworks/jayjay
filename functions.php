@@ -36,12 +36,36 @@ add_action( 'init', 'register_my_menu' );
 function m1_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'the_logo' ); // Add setting for logo uploader
          
-    // Add control for logo uploader (actual uploader)
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'the_logo', array(
-        'label'    => __( 'Logo', 'logo' ),
-        'section'  => 'title_tagline',
-        'settings' => 'the_logo',
-    ) ) );
+        // Add control for logo uploader (actual uploader)
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'the_logo', array(
+            'label'    => __( 'Logo', 'jayjay' ),
+            'section'  => 'title_tagline',
+            'settings' => 'the_logo',
+        ) ) );
+
+
+    $wp_customize->add_setting( 'the_nav_img' ); // Add setting for logo uploader
+         
+        // Add control for logo uploader (actual uploader)
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'the_nav_img', array(
+            'label'    => __( 'Nav img', 'jayjay' ),
+            'section'  => 'title_tagline',
+            'settings' => 'the_nav_img',
+        ) ) );
+
+        $wp_customize->add_setting('the_link', array(
+        'default'        => '/login',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+ 
+    ));
+
+          $wp_customize->add_control('the_link', array(
+            'label'      => __('Button', 'jayjay'),
+            'section'    => 'title_tagline',
+            'settings'   => 'the_link',
+        ));
+
 }
 add_action( 'customize_register', 'm1_customize_register' );
 
@@ -52,6 +76,8 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/navwalker.php');
 }
 
+
+/* Reading time */
 function prefix_estimated_reading_time( $content = '', $wpm = 300 ) {
 $clean_content = strip_shortcodes( $content );
 $clean_content = strip_tags( $clean_content );
@@ -59,6 +85,7 @@ $word_count = str_word_count( $clean_content );
 $time = ceil( $word_count / $wpm );
 return $time;
 }
+
 
 
 add_action('wp_enqueue_scripts', 'cssmenumaker_scripts_styles' );
