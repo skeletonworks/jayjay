@@ -7,3 +7,62 @@ hr{
     border-color: #222 !important;
     width: 80px;
     }
+
+  article p{
+  line-height: 1.8;
+  }
+
+
+
+  #simpliform{
+
+  	.step{
+  		border: 1px solid #ddd;
+  		padding: 10px 0;
+  		margin-bottom: 10px; 
+  	}
+
+  	.step-header{
+  		padding: 15px;
+  	}
+  	.control-label{
+  		text-transform: uppercase;
+  		font-size: 10px;
+  	}
+
+  	.form-control{
+  		border-bottom: 2px solid;
+  	}
+  	.pagination-wrapper{
+  		padding: 15px;
+  	}
+	.next-btn-wrapper, .prev-btn-wrapper{
+		width: 100% !important;
+		text-align: center !important;
+		margin-bottom: 10px; 
+
+		.next-btn{
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.prev-btn-wrapper{
+		order: 2;
+	}
+  }
+
+  .form-container{
+  	color: #fff;
+
+  	.step{
+  		border: none !important;
+  	}
+
+  	.form-control{
+  		border-radius: 0 !important;
+  		padding: 30px 15px !important;
+  		border: 0!important;
+  	}
+
+  }
